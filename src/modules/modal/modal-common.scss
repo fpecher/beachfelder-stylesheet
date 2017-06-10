@@ -97,7 +97,7 @@
 
 		@include breakpoint('m') {
 			position: relative;
-			padding: 0 0;
+			padding: $modal-common-footer-inner-spacing-reset;
 			bottom: inherit;
 		}
 	}
