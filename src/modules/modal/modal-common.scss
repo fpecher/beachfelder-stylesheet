@@ -89,6 +89,7 @@
 
 	&__footer {
 		@include -spacing-static-f();
+		@include -spacing-inner-a();
 		position: fixed;
 		bottom: $modal-common-footer-position-bottom;
 		left: $modal-common-footer-position;
@@ -96,7 +97,8 @@
 
 		@include breakpoint('m') {
 			position: relative;
-
+			padding: 0 0;
+			bottom: inherit;
 		}
 	}
 }

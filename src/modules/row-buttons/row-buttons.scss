@@ -2,12 +2,10 @@
 @import "../../mixins/breakpoint";
 
 .row-buttons {
+	@include flex();
+	@include flex--column-reverse();
 
-	&__row {
-		@include flex();
-		@include flex--column-reverse();
-		@include breakpoint('s') {
-			@include flex--direction(row);
-		}
+	@include breakpoint('s') {
+		@include flex--direction(row);
 	}
 }
