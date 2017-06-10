@@ -69,4 +69,12 @@
       color: $button-label-color-disabled;
     }
   }
+
+  &--red {
+  	background: $button-background-color-red;
+
+  	&:hover {
+  		background: $button-background-color-red-hovered;
+  	}
+  }
 }

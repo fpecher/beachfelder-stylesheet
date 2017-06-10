@@ -19,3 +19,6 @@ $button-icon-color-disabled: rgba($color-palette-white, 0.7) !default;
 $button-label-color-disabled: rgba($color-palette-white, 0.7) !default;
 
 $button-box-shadow-color-focus: rgba($color-palette-black, .2) !default;
+
+$button-background-color-red: $color-palette-red !default;
+$button-background-color-red-hovered: lighten($color-palette-red, 5%) !default;
