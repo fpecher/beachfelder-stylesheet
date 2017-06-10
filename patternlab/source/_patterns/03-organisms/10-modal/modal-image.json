@@ -3,5 +3,6 @@
 	"modal-image_image": "http://beachfelder.de/img/header-image.jpg",
 	"modal-image_title": "An additional title",
 	"modal-image_content": true,
+	"modal-image_body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores amet aliquid fugiat cumque voluptatibus sunt minus non iure, modi ducimus accusamus maxime voluptate, unde, dicta eligendi labore expedita quae ipsa.",
 	"modal-image_buttons": true
 }

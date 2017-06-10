@@ -9,6 +9,14 @@
 						{{ modal-image_title }}
 					</div>
 					<div class="row modal-image__body">
+						{{# modal-image_body }}
+							<div class="row">
+									<div class="column--12">
+										{{ modal-image_body }}
+									</div>
+								</div>
+						{{/ modal-image_body }}
+
 						{{# modal-image_content }}
 							<div class="column column--12 column--s-6">
 								{{> molecules-input(input_label: "Dein Benutzername", input_icon: "user") }}
