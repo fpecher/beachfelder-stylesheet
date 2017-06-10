@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+## [0.1.2] - 2017-06-10
+- added modal common
+- added list beachcourt
+
 ## [0.1.1] - 2017-05-28
 - added image slider for beachcourt detail page
 - added notification box rating
