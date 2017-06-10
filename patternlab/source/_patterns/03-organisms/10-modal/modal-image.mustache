@@ -1,0 +1,29 @@
+<div class="modal-image {{ styleModifier }}">
+	<div class="modal-image__dialog">
+		<div class="modal-image__content">
+			<div class="modal-image__close icon icon--close"></div>
+
+			<img src="{{ modal-image_image }}" class="modal-image__image" />
+			<div class="modal-image__inner">
+					<div class="modal-image__header">
+						{{ modal-image_title }}
+					</div>
+					<div class="row modal-image__body">
+						{{# modal-image_content }}
+							<div class="column column--12 column--s-6">
+								{{> molecules-input(input_label: "Dein Benutzername", input_icon: "user") }}
+							</div>
+							<div class="column column--12 column--s-6">
+								{{> molecules-input:-spacing-static-b(input_label: "Dein Passwort", input_icon: "password") }}
+							</div>
+						{{/ modal-image_content }}
+					</div>
+					<div class="modal-image__footer">
+						{{# modal-image_buttons }}
+							{{> molecules-button(button_label: "Ok") }}
+						{{/ modal-image_buttons }}
+					</div>
+				</div>
+			</div>
+	</div>
+</div>

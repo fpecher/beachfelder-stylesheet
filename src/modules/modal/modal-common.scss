@@ -25,6 +25,10 @@
 		}
 	}
 
+	&_image {
+		width: 50%;
+	}
+
 	&__content {
 		@include -spacing-inner-a();
 
