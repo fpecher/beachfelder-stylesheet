@@ -65,7 +65,7 @@
     "Javascript",
     "css"
   ],
-  "author": "Fabian Pecher <peche@beachfelder.der>",
+  "author": "Fabian Pecher <pecher@beachfelder.der>",
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^6.6.1",
