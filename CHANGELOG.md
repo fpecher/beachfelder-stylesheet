@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
+- added button row
+- added background-color modifier for standard buttons
 
 ## [0.1.2] - 2017-06-10
 - added modal common
