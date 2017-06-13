@@ -9,10 +9,13 @@
 	}
 
 	&__label {
+		@include -font-primary();
 		position: relative;
 		float: left;
     height: $checkbox-switch-label-height;
 		cursor: pointer;
+		padding-left: $checkbox-switch-label-inner-spacing-left;
+		color: $checkbox-switch-label-text-color;
 
 		&::before,
 		&::after {
@@ -44,8 +47,8 @@
 		&::before {
 			background-color: $checkbox-switch-background-color-enabled;
 		}
-		
-		&::after { 
+
+		&::after {
 			margin-left: $checkbox-switch-margin-left-label-checked;
 		}
 	}
