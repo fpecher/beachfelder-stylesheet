@@ -15,6 +15,7 @@
     height: $checkbox-switch-label-height;
 		cursor: pointer;
 		padding-left: $checkbox-switch-label-inner-spacing-left;
+		padding-top: $checkbox-switch-label-inner-spacing-top;
 		color: $checkbox-switch-label-text-color;
 
 		&::before,
