@@ -1,0 +1,40 @@
+@import "../../setup/color-palette.setup";
+
+$modal-image-dialog-width: 100% !default;
+$modal-image-dialog-height: 100% !default;
+$modal-image-dialog-position: 0 !default;
+$modal-image-dialog-background-color: rgba($color-palette-black, .4) !default;
+
+$modal-image-content-background-color: $color-palette-white !default;
+$modal-image-content-width: 100% !default;
+$modal-image-content-height: 100vh !default;
+$modal-image-content-width-m: 88.8888% !default;
+$modal-image-content-width-l: 66.6666% !default;
+$modal-image-content-box-shadow-blur: 1.875rem !default;
+$modal-image-content-box-shadow-spread: -.3125rem !default;
+$modal-image-content-box-shadow-color: rgba($color-palette-black, .2) !default;
+
+$modal-image-header-text-color: $color-palette-blue-2 !default;
+$modal-image-header-text-max-width: 90%;
+
+$modal-image-image-width: 100% !default;
+$modal-image-image-width-m: 50% !default;
+$modal-image-image-overlay-position: 0 !default;
+
+$modal-image-inner-width: 100% !default;
+$modal-image-inner-width-m: 50% !default;
+
+$modal-image-footer-position: 0 !default;
+$modal-image-footer-position-bottom: 1rem !default;
+$modal-image-footer-width: 100% !default;
+$modal-image-footer-inner-spacing-reset: 0 !default;
+
+$modal-image-icon-font-size: 2rem !default;
+$modal-image-icon-dimension: 2rem !default;
+$modal-image-icon-position: .4375rem !default;
+$modal-image-icon-color: $color-palette-gray-2 !default;
+$modal-image-icon-color-hovered: $color-palette-blue-1 !default;
+$modal-image-icon-safe-area: -.4375rem !default;
+$modal-image-icon-z-index: 1;
+
+$modal-image-list-text-color: $color-palette-white !default;

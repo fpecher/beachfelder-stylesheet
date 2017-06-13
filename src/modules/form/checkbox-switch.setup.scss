@@ -7,5 +7,9 @@ $checkbox-switch-border-radius-label: 50% !default;
 $checkbox-switch-width-switch: 1.4rem !default;
 $checkbox-switch-background-color-label: $color-palette-white !default;
 $checkbox-switch-margin-left-label-checked: 1.5rem !default;
-$checkbox-switch-background-color-enabled: $color-palette-blue-2 !default;
+$checkbox-switch-background-color-enabled: $color-palette-green !default;
 $checkbox-switch-background-color-disabled: $color-palette-red !default;
+
+$checkbox-switch-label-inner-spacing-left: 3.5rem !default;
+$checkbox-switch-label-inner-spacing-top: .25rem !default;
+$checkbox-switch-label-text-color: $color-palette-blue-2 !default;

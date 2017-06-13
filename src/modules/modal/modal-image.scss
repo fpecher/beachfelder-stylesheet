@@ -1,0 +1,158 @@
+@import "../../mixins/animation";
+@import "../../base/spacing/spacing.mixin";
+@import "../../base/font/font.mixin";
+@import "../../base/typo/typo.mixin";
+@import "../../base/grid/flex.mixin";
+@import "../../base/background/background.mixin";
+@import "../../base/grid/flex.mixin";
+@import "../../mixins/breakpoint";
+
+@import "modal-image.setup";
+
+.modal-image {
+
+	&__dialog {
+		width: $modal-image-dialog-width;
+		height: $modal-image-dialog-height;
+		position: fixed;
+		background: $modal-image-dialog-background-color;
+		top: $modal-image-dialog-position;
+		left: $modal-image-dialog-position;
+		right: $modal-image-dialog-position;
+
+		@include breakpoint('m') {
+			@include flex();
+			@include flex--center-vertical();
+			@include flex--center-horizontal();
+		}
+	}
+
+	&__content {
+		@include flex();
+		@include flex--direction(column);
+
+		background: $modal-image-content-background-color;
+		position: relative;
+		margin: auto;
+		width: $modal-image-content-width;
+		height: $modal-image-content-height;
+
+		@include breakpoint('m') {
+			@include flex--direction(row);
+
+			width: $modal-image-content-width-m;
+			height: auto;
+			box-shadow: 0 0 $modal-image-content-box-shadow-blur $modal-image-content-box-shadow-spread $modal-image-content-box-shadow-color;
+		}
+
+		@include breakpoint('l') {
+			width: $modal-image-content-width-l;
+		}
+	}
+
+	&__image {
+		width: $modal-image-image-width;
+		position: relative;
+
+		@include breakpoint('m') {
+			width: $modal-image-image-width-m;
+		}
+
+		img {
+			width: $modal-image-image-width;
+			height: $modal-image-image-width;
+		}
+	}
+
+	&__overlay {
+		@include -spacing-inner-a();
+		@include -background-gradient();
+		display: none;
+		position: absolute;
+		top: $modal-image-image-overlay-position;
+		left: $modal-image-image-overlay-position;
+		right: $modal-image-image-overlay-position;
+		bottom: $modal-image-image-overlay-position;
+
+		@include breakpoint('xs') {
+			@include flex();
+			@include flex--center-horizontal();
+			@include flex--center-vertical();
+			@include flex--direction(column);
+		}
+	}
+
+	&__inner {
+		@include -spacing-inner-a();
+		width: $modal-image-inner-width;
+
+		@include breakpoint('m') {
+			width: $modal-image-inner-width-m;
+		}
+	}
+
+	&__close {
+		@include transition(color, .2s);
+
+		position: absolute;
+		top: $modal-image-icon-position;
+		right: $modal-image-icon-position;
+		width: $modal-image-icon-dimension;
+		height: $modal-image-icon-dimension;
+		font-size: $modal-image-icon-font-size;
+		cursor: pointer;
+		text-align: center;
+		color: $modal-image-icon-color;
+		z-index: $modal-image-icon-z-index;
+
+		&:after { // safe clickable area
+		  content: '';
+		  position: absolute;
+		  top: $modal-image-icon-safe-area;
+		  right: $modal-image-icon-safe-area;
+		  bottom: $modal-image-icon-safe-area;
+		  left: $modal-image-icon-safe-area;
+		}
+
+		&:hover {
+			color: $modal-image-icon-color-hovered;
+		}
+	}
+
+	&__header {
+		@include -typo-headline-3();
+		@include -font-secondary();
+		@include -overflow-ellipsis();
+		max-width: $modal-image-header-text-max-width;
+		color: $modal-image-header-text-color;
+	}
+
+	&__body {
+		@include -font-primary();
+		@include -typo-copy();
+		@include -spacing-static-b();
+	}
+
+	&__footer {
+		@include -spacing-static-f();
+		@include -spacing-inner-a();
+		position: fixed;
+		bottom: $modal-image-footer-position-bottom;
+		left: $modal-image-footer-position;
+		width: $modal-image-footer-width;
+
+		@include breakpoint('m') {
+			position: relative;
+			padding: $modal-image-footer-inner-spacing-reset;
+			bottom: inherit;
+		}
+	}
+
+	&__list {
+		color: $modal-image-list-text-color;
+
+		li {
+			@include -typo-copy--large();
+		}
+	}
+}

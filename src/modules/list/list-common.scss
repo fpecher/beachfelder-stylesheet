@@ -1,0 +1,16 @@
+@import "../../base/text-color/text-color.mixin";
+@import "../../base/typo/typo.mixin";
+@import "../../base/font/font.mixin";
+
+@import "list-common.setup";
+
+.list-common {
+	&__item {
+		@include -font-primary();
+		@include -typo-copy();
+	}
+
+	&__icon {
+		margin-right: $list-common-icon-spacing-right;
+	}
+}

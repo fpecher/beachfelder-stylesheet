@@ -1,0 +1,19 @@
+{
+	"bodyClass": "sg-wrapper-light",
+	"modal-image_image": "http://beachfelder.de/img/header-image.jpg",
+	"modal-image_title": "An additional title",
+	"modal-image_content": true,
+	"modal-image_buttons": true,
+
+	"list-common_items":[
+		{
+			"item": "Bewerten von Beachvolleyballfeldern"
+		},
+		{
+			"item": "Checkin an Beachvolleyballfeldern"
+		},
+		{
+			"item": "Einreichen von neuen Beachvolleyballfeldern"
+		}
+	]
+}

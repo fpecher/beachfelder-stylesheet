@@ -1,5 +1,6 @@
 {
 	"checkbox-switch_name": "some name",
 	"checkbox-switch_value": "some value",
+	"checkbox-switch_label": "Some label",
 	"checkbox-switch_checked": false
 }

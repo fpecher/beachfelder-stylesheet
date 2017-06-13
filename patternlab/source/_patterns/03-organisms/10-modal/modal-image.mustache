@@ -1,0 +1,50 @@
+<div class="modal-image {{ styleModifier }}">
+	<div class="modal-image__dialog">
+		<div class="modal-image__content">
+			<div class="modal-image__close icon icon--close"></div>
+			<div class="modal-image__image">
+				<img src="{{ modal-image_image }}" class="image" />
+				<div class="modal-image__overlay">
+					{{> organisms-header-page(header-page_title: "Deine Vorteile",header-page_titleColor: "white") }}
+					{{> molecules-list-common:modal-image__list|-spacing-static-b }}
+				</div>
+			</div>
+			<div class="modal-image__inner">
+					<div class="modal-image__header">
+						{{ modal-image_title }}
+					</div>
+					<div class="row modal-image__body">
+						{{# modal-image_content }}
+						<div class="row">
+							<div class="column column--12">
+								{{> molecules-input(input_label: "Dein Benutzername", input_icon: "user") }}
+							</div>
+							<div class="column column--12">
+								{{> molecules-input:-spacing-static-b(input_label: "Dein Passwort", input_icon: "password") }}
+							</div>
+						</div>
+						<div class="row">
+							<div class="column column--12 -spacing-static-c">
+								{{> molecules-checkbox-switch(checkbox-switch_label: "angemeldet bleiben") }}
+							</div>
+						</div>
+						<div class="row">
+							<div class="column column--12 -align-right">
+								<p class="-typo-copy -text-color-blue-2 -font-primary -spacing-static-c">
+									<a href="#" class="-typo-copy-link -text-color-green">Passwort vergessen?</a>
+								</p>
+								<p class="-typo-copy -text-color-blue-2 -font-primary -spacing-static-c">Noch kein Mitglied?
+									Dann <a href="#" class="-typo-copy-link -text-color-green">registriere</a> dich jetzt</p>
+							</div>
+						</div>
+						{{/ modal-image_content }}
+					</div>
+					<div class="modal-image__footer">
+						{{# modal-image_buttons }}
+							{{> molecules-button(button_label: "Anmelden") }}
+						{{/ modal-image_buttons }}
+					</div>
+				</div>
+			</div>
+	</div>
+</div>

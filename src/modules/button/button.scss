@@ -25,11 +25,6 @@
   cursor: pointer;
   border-radius: $button-border-radius;
 
-  @include breakpoint('s') {
-		@include -spacing-zero();
-	}
-
-
   &__icon {
     display: inline-block;
     vertical-align: middle;
