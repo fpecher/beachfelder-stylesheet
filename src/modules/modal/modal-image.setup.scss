@@ -16,8 +16,13 @@ $modal-image-content-box-shadow-color: rgba($color-palette-black, .2) !default;
 
 $modal-image-header-text-color: $color-palette-blue-2 !default;
 $modal-image-header-text-max-width: 90%;
+
 $modal-image-image-width: 100% !default;
+$modal-image-image-width-m: 50% !default;
+$modal-image-image-overlay-position: 0 !default;
+
 $modal-image-inner-width: 100% !default;
+$modal-image-inner-width-m: 50% !default;
 
 $modal-image-footer-position: 0 !default;
 $modal-image-footer-position-bottom: 1rem !default;
@@ -30,3 +35,6 @@ $modal-image-icon-position: .4375rem !default;
 $modal-image-icon-color: $color-palette-gray-2 !default;
 $modal-image-icon-color-hovered: $color-palette-blue-1 !default;
 $modal-image-icon-safe-area: -.4375rem !default;
+$modal-image-icon-z-index: 1;
+
+$modal-image-list-text-color: $color-palette-white !default;

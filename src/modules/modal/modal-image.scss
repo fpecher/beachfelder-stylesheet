@@ -3,6 +3,8 @@
 @import "../../base/font/font.mixin";
 @import "../../base/typo/typo.mixin";
 @import "../../base/grid/flex.mixin";
+@import "../../base/background/background.mixin";
+@import "../../base/grid/flex.mixin";
 @import "../../mixins/breakpoint";
 
 @import "modal-image.setup";
@@ -50,15 +52,43 @@
 
 	&__image {
 		width: $modal-image-image-width;
+		position: relative;
 
 		@include breakpoint('m') {
-			max-width: 50%;
+			width: $modal-image-image-width-m;
+		}
+
+		img {
+			width: $modal-image-image-width;
+			height: $modal-image-image-width;
+		}
+	}
+
+	&__overlay {
+		@include -spacing-inner-a();
+		@include -background-gradient();
+		display: none;
+		position: absolute;
+		top: $modal-image-image-overlay-position;
+		left: $modal-image-image-overlay-position;
+		right: $modal-image-image-overlay-position;
+		bottom: $modal-image-image-overlay-position;
+
+		@include breakpoint('xs') {
+			@include flex();
+			@include flex--center-horizontal();
+			@include flex--center-vertical();
+			@include flex--direction(column);
 		}
 	}
 
 	&__inner {
 		@include -spacing-inner-a();
 		width: $modal-image-inner-width;
+
+		@include breakpoint('m') {
+			width: $modal-image-inner-width-m;
+		}
 	}
 
 	&__close {
@@ -73,6 +103,7 @@
 		cursor: pointer;
 		text-align: center;
 		color: $modal-image-icon-color;
+		z-index: $modal-image-icon-z-index;
 
 		&:after { // safe clickable area
 		  content: '';
@@ -114,6 +145,14 @@
 			position: relative;
 			padding: $modal-image-footer-inner-spacing-reset;
 			bottom: inherit;
+		}
+	}
+
+	&__list {
+		color: $modal-image-list-text-color;
+
+		li {
+			@include -typo-copy--large();
 		}
 	}
 }

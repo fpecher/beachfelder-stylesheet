@@ -14,10 +14,6 @@
 	position: relative;
 	width: $input-width;
 
-	@include breakpoint('s') {
-		@include -spacing-zero();
-	}
-
 	&__field {
 		@include -font-primary();
 		@include transition(all, .2s);
