@@ -8,9 +8,11 @@
 	&__item {
 		@include -font-primary();
 		@include -typo-copy();
+		@include -text-color-blue-2();
 	}
 
 	&__icon {
 		margin-right: $list-common-icon-spacing-right;
+		@include -text-color-blue-1();
 	}
 }
