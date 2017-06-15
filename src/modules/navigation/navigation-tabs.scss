@@ -1,0 +1,69 @@
+@import "../../base/font/font.mixin";
+@import "../../base/typo/typo.mixin";
+@import "../../base/spacing/spacing.mixin";
+@import "../../mixins/animation";
+
+@import "navigation-tabs.setup";
+
+.navigation-tabs {
+
+	$bem-block: &;
+
+	&__title-bar {
+		white-space: nowrap;
+		overflow-x: scroll;
+	}
+
+	&__item {
+		@include transition(.2s, all);
+		display: inline-block;
+		background: $navigation-tabs-title-background-color;
+		padding: $navigation-tabs-title-inner-spacing-vertical $navigation-tabs-title-inner-spacing-horizontal;
+		cursor: pointer;
+		border-bottom: $navigation-tabs-title-border-width solid transparent;
+
+		&:hover {
+			border-bottom: $navigation-tabs-title-border-width solid $navigation-tabs-title-border-color-hover;
+		}
+
+		&--active {
+			background: $navigation-tabs-title-background-color-active;
+		}
+	}
+
+	&__icon {
+		font-size: $navigation-tabs-icon-font-size;
+		color: $navigation-tabs-icon-text-color;
+		vertical-align: middle;
+		margin-right: $navigation-tabs-icon-spacing-right;
+
+		&--active {
+			color: $navigation-tabs-icon-text-color-active;
+		}
+	}
+
+	&__title {
+		@include -font-secondary();
+		@include -typo-headline-4();
+
+		color: $navigation-tabs-title-text-color;
+		vertical-align: middle;
+
+		&--active {
+			color: $navigation-tabs-title-text-color-active;
+		}
+	}
+
+	&__content {
+		@include -spacing-static-b();
+		@include -spacing-inner-b();
+
+		display: none;
+
+		&--active {
+			@include -font-primary();
+			@include -typo-copy();
+			display: block;
+		}
+	}
+}

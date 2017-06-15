@@ -1,0 +1,17 @@
+@import "../../setup/color-palette.setup";
+
+$navigation-tabs-title-text-color: $color-palette-green !default;
+$navigation-tabs-title-background-color: $color-palette-gray-2 !default;
+$navigation-tabs-title-inner-spacing-vertical: .625rem !default;
+$navigation-tabs-title-inner-spacing-horizontal: .875rem !default;
+$navigation-tabs-title-border-color-hover: $color-palette-green !default;
+$navigation-tabs-title-border-width: 3px !default;
+
+$navigation-tabs-icon-font-size: .875rem !default;
+$navigation-tabs-icon-text-color: $color-palette-green !default;
+$navigation-tabs-icon-spacing-right: .5rem !default;
+
+//** active state **//
+$navigation-tabs-title-background-color-active: $color-palette-green !default;
+$navigation-tabs-title-text-color-active: $color-palette-white !default;
+$navigation-tabs-icon-text-color-active: $color-palette-white !default;
