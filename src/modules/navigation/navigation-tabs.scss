@@ -55,7 +55,6 @@
 	}
 
 	&__content {
-		@include -spacing-static-b();
 		@include -spacing-inner-b();
 
 		display: none;
@@ -64,6 +63,8 @@
 			@include -font-primary();
 			@include -typo-copy();
 			display: block;
+			background-color: $navigation-tabs-content-background-color;
+
 		}
 	}
 }
