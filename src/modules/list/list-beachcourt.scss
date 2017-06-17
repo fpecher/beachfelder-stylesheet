@@ -9,6 +9,14 @@
 
 .list-beachcourt {
 
+	&__link {
+		display: block;
+
+		&:not(:first-child) {
+	    margin-top: $list-beachcourt-item-margin-top;
+	  }
+	}
+
 	&__item {
 		@include transition(all, .2s);
 		@include flex();
@@ -17,12 +25,7 @@
 	  background: $list-beachcourt-item-background-color;
 	  height: $list-beachcourt-item-height;
 	  width: $list-beachcourt-item-width;
-	  cursor: pointer;
 	  padding: $list-beachcourt-item-padding;
-
-	  &:not(:first-child) {
-	    margin-top: $list-beachcourt-item-margin-top;
-	  }
 
 	  @include breakpoint('s') {
 	  	padding: $list-beachcourt-item-padding-s;
@@ -90,6 +93,14 @@
   }
 
   &__action {
+  	height: $list-beachcourt-action-height;
+  }
+
+  &__button {
+  	height: $list-beachcourt-action-height;
+  }
+
+  &__form {
   	height: $list-beachcourt-action-height;
   }
 }
