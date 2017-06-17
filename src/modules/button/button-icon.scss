@@ -24,6 +24,7 @@
 
 	@include breakpoint('s') {
 		width: $button-icon-width-s;
+		@include -spacing-zero();
 	}
 
 	&__icon {
