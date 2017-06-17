@@ -1,0 +1,56 @@
+@import "../../base/font/font.mixin";
+@import "../../base/typo/typo.mixin";
+@import "../../base/grid/flex.mixin";
+@import "../../base/spacing/spacing.mixin";
+@import "../../mixins/animation";
+
+@import "navigation-accordion.setup";
+
+.navigation-accordion {
+
+	&__header {
+		@include flex();
+		@include flex--center-horizontal();
+		@include -spacing-inner-a();
+		position: relative;
+		justify-content: space-between;
+		border-bottom: $navigation-accordion-header-border-width solid $navigation-accordion-header-border-color;
+	}
+
+	&__title {
+		@include -font-primary();
+		@include -typo-copy--large();
+
+		color: $navigation-accordion-title-text-color;
+	}
+
+	&__icon {
+		@include transition(all, .3s);
+		@include -typo-headline-3();
+
+		color: $navigation-accordion-icon-text-color;
+		cursor: pointer;
+		position: relative;
+		transform: rotate(0deg);
+
+		&:after { // safe clickable area
+		  content: '';
+		  position: absolute;
+		  top: -$navigation-accordion-icon-safe-area;
+		  right: -$navigation-accordion-icon-safe-area;
+		  bottom: -$navigation-accordion-icon-safe-area;
+		  left: -$navigation-accordion-icon-safe-area;
+		}
+
+		&--open {
+			transform: rotate(180deg);
+		}
+	}
+
+	&__content {
+		@include -spacing-inner-a();
+		@include -typo-copy();
+		@include -font-primary();
+	}
+
+}
