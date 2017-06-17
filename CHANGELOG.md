@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+## [0.4.1] - 2017-06-17
+- added margin-top to .page class
+
 ## [0.4.0] - 2017-06-17
 - added navigation tabs pattern
 - added notification sticky pattern
