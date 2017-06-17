@@ -93,5 +93,13 @@
 			@include -spacing-zero();
 		}
 
+		&--error {
+			background: $notification-common-button-background-color-error;
+
+			&:hover {
+				background: $notification-common-button-background-color-error-hover;
+			}
+		}
+
 	}
 }

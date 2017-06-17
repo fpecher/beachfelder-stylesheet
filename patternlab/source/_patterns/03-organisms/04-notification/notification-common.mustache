@@ -6,7 +6,12 @@
 
 		<span class="notification-common__text"> {{ notification-common_content }} </span>
 		{{# notification-common_button }}
-			{{> molecules-button:notification-common__button(button_label: "Ok") }}
+			{{# notification-common_error }}
+				{{> molecules-button:notification-common__button|notification-common__button--error(button_label: "Ok") }}
+			{{/ notification-common_error }}
+			{{^ notification-common_error }}
+				{{> molecules-button:notification-common__button(button_label: "Ok") }}
+			{{/ notification-common_error }}
 		{{/ notification-common_button }}
 	</div>
 	{{^ notification-common_button }}

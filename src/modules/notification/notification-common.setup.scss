@@ -22,3 +22,5 @@ $notification-common-button-max-width: 6.25rem !default;
 
 //** error state **//
 $notification-common-background-color-error: $color-palette-red !default;
+$notification-common-button-background-color-error: darken($color-palette-red, 5%) !default;
+$notification-common-button-background-color-error-hover: darken($color-palette-red, 10%) !default;
