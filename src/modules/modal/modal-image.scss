@@ -149,10 +149,10 @@
 	}
 
 	&__list {
-		color: $modal-image-list-text-color;
 
 		li {
 			@include -typo-copy--large();
+			color: $modal-image-list-text-color;
 		}
 	}
 }

@@ -145,11 +145,23 @@
  	  content: '\f104';
  	}
 
+	&--arrow-down:before {
+	  content: '\f078';
+	}
+
  	&--caret-right:before {
  	  content: '\f0da';
  	}
 
  	&--distance:before {
  	  content: '\f124';
+ 	}
+
+ 	&--plus:before {
+ 		content: '\f067';
+ 	}
+
+ 	&--minus:before {
+ 		content: '\f068';
  	}
 }
