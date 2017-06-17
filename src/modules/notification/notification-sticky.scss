@@ -1,0 +1,105 @@
+@import "../../base/font/font.mixin";
+@import "../../base/typo/typo.mixin";
+@import "../../base/grid/flex.mixin";
+@import "../../base/spacing/spacing.mixin";
+@import "../../base/align/align.mixin";
+@import "../../mixins/breakpoint";
+@import "../../mixins/animation";
+
+@import "notification-sticky.setup";
+
+.notification-sticky {
+	@include -spacing-inner-a();
+
+	position: fixed;
+	top: $notification-sticky-position;
+	left: $notification-sticky-position;
+	right: $notification-sticky-position;
+	background: $notification-sticky-background-color;
+	z-index: $notification-sticky-z-index;
+
+	&--error {
+		background: $notification-sticky-background-color-error;
+	}
+
+	&__content {
+		@include flex();
+		@include flex--direction(column);
+		@include flex--center-horizontal();
+		@include -align-center();
+
+		@include breakpoint('s') {
+			@include flex--direction(row);
+			@include -align-left();
+		}
+	}
+
+	&__icon {
+		position: relative;
+		color: $notification-sticky-icon-text-color;
+		font-size: $notification-sticky-icon-font-size;
+
+		@include breakpoint('s') {
+			margin-right: $notification-sticky-icon-spacing-right;
+			font-size: $notification-sticky-icon-font-size-s;
+		}
+
+		&--close {
+			@include -spacing-zero();
+			@include transition(color, .3s);
+
+			position: absolute;
+			top: $notification-sticky-icon-close-safe-area;
+			right: $notification-sticky-icon-close-safe-area;
+			cursor: pointer;
+			margin-right: $notification-sticky-icon-spacing-right-close;
+			font-size: $notification-sticky-icon-font-size-close;
+			color: $notification-sticky-icon-text-color-close;
+
+			&:hover {
+				color: $notification-sticky-icon-text-color-close-hover;
+			}
+
+			&:after {
+				content: '';
+				position: absolute;
+				top: -$notification-sticky-icon-close-safe-area;
+				right: -$notification-sticky-icon-close-safe-area;
+				bottom: -$notification-sticky-icon-close-safe-area;
+				left: -$notification-sticky-icon-close-safe-area;
+			}
+		}
+
+	}
+
+	&__text {
+		@include -typo-copy();
+		@include -font-primary();
+		@include -spacing-static-b();
+
+		color: $notification-sticky-text-color;
+
+		@include breakpoint('s') {
+			@include -spacing-zero();
+
+			margin-right: $notification-sticky-text-spacing-right;
+		}
+	}
+
+	&__button {
+		max-width: $notification-sticky-button-max-width;
+
+		@include breakpoint('s') {
+			@include -spacing-zero();
+		}
+
+		&--error {
+			background: $notification-sticky-button-background-color-error;
+
+			&:hover {
+				background: $notification-sticky-button-background-color-error-hover;
+			}
+		}
+
+	}
+}
