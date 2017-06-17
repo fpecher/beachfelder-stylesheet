@@ -5,8 +5,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
+
+## [0.4.0] - 2017-06-17
 - added navigation tabs pattern
-- added notification common pattern
+- added notification sticky pattern
 
 ## [0.3.0] - 2017-06-13
 - added modal image as organism
