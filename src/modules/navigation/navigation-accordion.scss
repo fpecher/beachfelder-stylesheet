@@ -14,18 +14,23 @@
 		@include -spacing-inner-a();
 		position: relative;
 		justify-content: space-between;
-		border-bottom: $navigation-accordion-header-border-width solid $navigation-accordion-header-border-color;
+		background: $navigation-accordion-background-color;
+		border-top: $navigation-accordion-header-border-width solid $navigation-accordion-header-border-color;
+
+		&:nth-last-child {
+			border-bottom: $navigation-accordion-header-border-width solid $navigation-accordion-header-border-color;
+		}
 	}
 
 	&__title {
-		@include -font-primary();
-		@include -typo-copy--large();
-
+		@include -font-secondary();
+		text-transform: uppercase;
+		font-size: $navigation-accordion-title-font-size;
 		color: $navigation-accordion-title-text-color;
 	}
 
 	&__icon {
-		@include transition(all, .3s);
+		@include transition(all, .5s);
 		@include -typo-headline-3();
 
 		color: $navigation-accordion-icon-text-color;
@@ -42,6 +47,11 @@
 		  left: -$navigation-accordion-icon-safe-area;
 		}
 
+		&:hover {
+			transform: rotate(180deg);
+			color: $navigation-accordion-icon-text-color-hovered;
+		}
+
 		&--open {
 			transform: rotate(180deg);
 		}
@@ -51,6 +61,12 @@
 		@include -spacing-inner-a();
 		@include -typo-copy();
 		@include -font-primary();
+
+		display: none;
+
+		&--open {
+			display: block;
+		}
 	}
 
 }
