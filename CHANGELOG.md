@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 - added navigation tabs pattern
+- added notification common pattern
 
 ## [0.3.0] - 2017-06-13
 - added modal image as organism

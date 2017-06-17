@@ -1,0 +1,97 @@
+@import "../../base/font/font.mixin";
+@import "../../base/typo/typo.mixin";
+@import "../../base/grid/flex.mixin";
+@import "../../base/spacing/spacing.mixin";
+@import "../../base/align/align.mixin";
+@import "../../mixins/breakpoint";
+@import "../../mixins/animation";
+
+@import "notification-common.setup";
+
+.notification-common {
+	@include -spacing-inner-a();
+
+	position: fixed;
+	top: $notification-common-position;
+	left: $notification-common-position;
+	right: $notification-common-position;
+	background: $notification-common-background-color;
+	z-index: $notification-common-z-index;
+
+	&--error {
+		background: $notification-common-background-color-error;
+	}
+
+	&__content {
+		@include flex();
+		@include flex--direction(column);
+		@include flex--center-horizontal();
+		@include -align-center();
+
+		@include breakpoint('s') {
+			@include flex--direction(row);
+			@include -align-left();
+		}
+	}
+
+	&__icon {
+		position: relative;
+		color: $notification-common-icon-text-color;
+		font-size: $notification-common-icon-font-size;
+
+		@include breakpoint('s') {
+			margin-right: $notification-common-icon-spacing-right;
+			font-size: $notification-common-icon-font-size-s;
+		}
+
+		&--close {
+			@include -spacing-zero();
+			@include transition(color, .3s);
+
+			position: absolute;
+			top: $notification-common-icon-close-safe-area;
+			right: $notification-common-icon-close-safe-area;
+			cursor: pointer;
+			margin-right: $notification-common-icon-spacing-right-close;
+			font-size: $notification-common-icon-font-size-close;
+			color: $notification-common-icon-text-color-close;
+
+			&:hover {
+				color: $notification-common-icon-text-color-close-hover;
+			}
+
+			&:after {
+				content: '';
+				position: absolute;
+				top: -$notification-common-icon-close-safe-area;
+				right: -$notification-common-icon-close-safe-area;
+				bottom: -$notification-common-icon-close-safe-area;
+				left: -$notification-common-icon-close-safe-area;
+			}
+		}
+
+	}
+
+	&__text {
+		@include -typo-copy();
+		@include -font-primary();
+		@include -spacing-static-b();
+
+		color: $notification-common-text-color;
+
+		@include breakpoint('s') {
+			@include -spacing-zero();
+
+			margin-right: $notification-common-text-spacing-right;
+		}
+	}
+
+	&__button {
+		max-width: $notification-common-button-max-width;
+
+		@include breakpoint('s') {
+			@include -spacing-zero();
+		}
+
+	}
+}

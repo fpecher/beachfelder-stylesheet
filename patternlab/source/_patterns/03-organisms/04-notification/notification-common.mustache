@@ -1,0 +1,15 @@
+<div class="notification-common {{ styleModifier }} {{# notification-common_error }} notification-common--error {{/ notification-common_error }}">
+	<div class="content notification-common__content">
+		{{# notification-common_icon }}
+			<span class="notification-common__icon icon icon--{{ notification-common_icon }}"></span>
+		{{/ notification-common_icon }}
+
+		<span class="notification-common__text"> {{ notification-common_content }} </span>
+		{{# notification-common_button }}
+			{{> molecules-button:notification-common__button(button_label: "Ok") }}
+		{{/ notification-common_button }}
+	</div>
+	{{^ notification-common_button }}
+		<span class="notification-common__icon notification-common__icon--close icon icon--close"></span>
+	{{/ notification-common_button }}
+</div>
