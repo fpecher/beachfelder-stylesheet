@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
-## [0.5.0] - 2017-06-17
+## [0.5.1] - 2017-06-17
 - changed markup on list beachcourt [breaking changes]
 
 ## [0.4.1] - 2017-06-17
