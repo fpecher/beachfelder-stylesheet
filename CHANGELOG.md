@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
+- added context menu pattern
+- added new icons
 
 ## [0.5.3] - 2017-06-17
 - changed markup on list beachcourt [breaking changes]

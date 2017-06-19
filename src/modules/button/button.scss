@@ -25,7 +25,7 @@
   cursor: pointer;
   border-radius: $button-border-radius;
 
-  @breakpoint('s') {
+  @include breakpoint('s') {
   	@include -spacing-zero();
   }
 

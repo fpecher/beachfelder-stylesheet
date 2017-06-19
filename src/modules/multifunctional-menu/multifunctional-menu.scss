@@ -19,6 +19,7 @@
 	right: $multifunctional-menu-horizontal-position;
 	box-sizing: border-box;
 	cursor: pointer;
+	overflow: hidden;
 
 	@include breakpoint('m') {
 		top: $multifunctional-menu-horizontal-position-m;
@@ -50,12 +51,11 @@
 
 	&__image {
 		width: $multifunctional-menu-dimension;
-		height: $multifunctional-menu-dimension;
-		border-radius: $multifunctional-menu-border-radius;
+		height: auto;
 
 		@include breakpoint('m') {
 			width: $multifunctional-menu-dimension-m;
-			height: $multifunctional-menu-dimension-m;
+			height: auto;
 		}
 	}
 }

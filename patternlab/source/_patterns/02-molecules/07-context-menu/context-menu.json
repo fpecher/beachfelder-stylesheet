@@ -1,0 +1,13 @@
+{
+	"bodyClass": "sg-wrapper-dark",
+	"context-menu_button": true,
+	"context-menu_items": [
+		{
+			"icon": "user-circle",
+			"name": "Item 1"
+		},
+		{
+			"icon": "heart",
+			"name": "Item 2"
+	]
+}
