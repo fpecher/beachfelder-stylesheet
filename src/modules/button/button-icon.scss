@@ -2,6 +2,7 @@
 @import "../../mixins/breakpoint";
 @import "../../base/align/align.mixin";
 @import "../../base/spacing/spacing.mixin";
+
 @import "button-icon.setup";
 
 .button-icon {
@@ -23,8 +24,9 @@
 	border-radius: $button-icon-border-radius;
 
 	@include breakpoint('s') {
-		width: $button-icon-width-s;
 		@include -spacing-zero();
+
+		width: $button-icon-width-s;
 	}
 
 	&__icon {

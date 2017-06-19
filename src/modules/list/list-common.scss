@@ -12,7 +12,8 @@
 	}
 
 	&__icon {
-		margin-right: $list-common-icon-spacing-right;
 		@include -text-color-blue-1();
+
+		margin-right: $list-common-icon-spacing-right;
 	}
 }
