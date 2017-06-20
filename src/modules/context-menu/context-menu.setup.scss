@@ -1,9 +1,11 @@
 @import "../../setup/color-palette.setup";
 
-
-$context-menu-width: 12.5rem !default;
+$context-menu-position-top: 3.125rem !default;
+$context-menu-position-right: 1.25rem !default;
 $context-menu-triangle-dimension: 0 !default;
 $context-menu-triangle-border-width: .625rem !default;
 $context-menu-icon-spacing-right: .625rem !default;
 $context-menu-triangle-color: $color-palette-gray-2 !default;
 $context-menu-button-border-radius-reset: 0 !default;
+
+$context-menu-position-top-open-state: 4.375rem !default;

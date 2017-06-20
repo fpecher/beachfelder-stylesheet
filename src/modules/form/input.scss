@@ -7,7 +7,6 @@
 @import "input.setup";
 
 .input {
-	@include -spacing-f();
 
 	display: inline-block;
 	border: none;

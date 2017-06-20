@@ -4,14 +4,20 @@
 @import "../../base/text-color/text-color.mixin";
 @import "../../base/align/align.mixin";
 @import "../../base/spacing/spacing.mixin";
+@import "../../mixins/animation";
 
 @import "context-menu.setup";
 
 .context-menu {
 	@include -background-gray-2();
 	@include -spacing-static-c();
+	@include transition(all, .4s);
+
 	position: absolute;
-	width: $context-menu-width;
+	width: auto;
+	opacity: 0;
+	right: $context-menu-position-right;
+	top: $context-menu-position-top;
 
 	&:before {
 		content: '';
@@ -24,6 +30,12 @@
 		border-width: 0 $context-menu-triangle-border-width $context-menu-triangle-border-width $context-menu-triangle-border-width;
 		border-color: transparent transparent $context-menu-triangle-color transparent;
 	}
+
+	&--open {
+		opacity: 1;
+		top: $context-menu-position-top-open-state;
+	}
+
 	&__list {
 		@include -spacing-inner-b();
 		@include -align-right();

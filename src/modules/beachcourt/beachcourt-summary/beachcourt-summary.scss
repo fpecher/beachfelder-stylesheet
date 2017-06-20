@@ -25,12 +25,7 @@
 		top: $beachcourt-summary-image-position-top;
 		left: $beachcourt-summary-image-position-left;
 		width: $beachcourt-summary-image-dimension;
-		height: auto;
-
-		@include breakpoint('s') {
-			width: auto;
-			height: $beachcourt-summary-image-dimension;
-		}
+		height: $beachcourt-summary-image-dimension;
 	}
 
 	&__overlay {
