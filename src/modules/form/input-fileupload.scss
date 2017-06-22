@@ -1,0 +1,37 @@
+@import "../../base/font/font.mixin";
+@import "../../base/typo/typo.mixin";
+@import "../../mixins/animation";
+
+@import "input-fileupload.setup";
+
+.input-fileupload {
+	@include transition(all, .4s);
+
+	background: $input-fileupload-background-color;
+	padding: $input-fileupload-inner-spacing-vertical $input-fileupload-inner-spacing-horizontal;
+	cursor: pointer;
+
+	&:hover {
+		background: $input-fileupload-background-color-hovered;
+	}
+
+	&__field {
+		width: $input-fileupload-field-dimension;
+		height: $input-fileupload-field-dimension;
+		opacity: $input-fileupload-field-opacity;
+		overflow: hidden;
+		position: absolute;
+		z-index: -$input-fileupload-field-z-index;
+	}
+
+	&__label {
+		@include -font-primary();
+		font-size: $input-fileupload-label-font-size;
+		color: $input-fileupload-label-text-color;
+	}
+
+	&__icon {
+		color: $input-fileupload-label-text-color;
+		margin-right: $input-fileupload-icon-spacing-right;
+	}
+}

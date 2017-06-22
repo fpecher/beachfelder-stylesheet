@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
+- added input type file pattern
 
 ## [0.6.0] - 2017-06-19
 - added context menu pattern
