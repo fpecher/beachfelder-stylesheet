@@ -10,6 +10,12 @@
 	background: $input-fileupload-background-color;
 	padding: $input-fileupload-inner-spacing-vertical $input-fileupload-inner-spacing-horizontal;
 	cursor: pointer;
+	display: inline-block;
+	outline: none;
+	appearance: none;
+	box-sizing: border-box;
+	width: auto;
+	max-height: $input-fileupload-max-height;
 
 	&:hover {
 		background: $input-fileupload-background-color-hovered;
