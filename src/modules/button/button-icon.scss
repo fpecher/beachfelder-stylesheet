@@ -10,7 +10,6 @@
 
 	@include transition(all, .2s);
 	@include -align-center();
-	@include -spacing-f();
 
 	width: $button-icon-width;
 	height: $button-icon-height;
@@ -24,8 +23,6 @@
 	border-radius: $button-icon-border-radius;
 
 	@include breakpoint('s') {
-		@include -spacing-zero();
-
 		width: $button-icon-width-s;
 	}
 

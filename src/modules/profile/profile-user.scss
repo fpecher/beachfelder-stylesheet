@@ -68,39 +68,17 @@
 		}
 	}
 
-	&-image {
+	&__image-container {
 		overflow: hidden;
 		position: relative;
-
-		&__edit {
-			@include flex();
-			@include flex--center-vertical();
-			@include flex--center-horizontal();
-			@include flex--direction(row);
-			@include -spacing-inner-b();
-			@include transition(all, .2s);
-
-			width: auto;
-		  height: $profile-user-image-edit-height;
-		  position: absolute;
-		  bottom: 0;
-		  left: 0;
-		  right: 0;
-		  background: $profile-user-image-background-color;
-		}
-
-		&__icon {
-			color: $profile-user-image-edit-icon-text-color;
-		}
-
-		&__label {
-			@include -font-primary();
-
-			margin-left: $profile-user-image-edit-label-margin;
-			color: $profile-user-image-edit-label-color;
-			font-size: $profile-user-image-edit-label-font-size;
-			cursor: pointer;
-		}
+		max-height: $profile-user-image-container-max-height;
 	}
 
+	&__image {
+		width: $profile-user-image-image-width;
+	}
+
+	&__multifunctional-menu {
+		top: $profile-user-image-mfm-position-top;
+	}
 }
