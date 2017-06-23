@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+## [0.7.1] - 2017-06-23
+- changed profile user image display
+- removed margin top of buttons
+
 ## [0.7.0] - 2017-06-22
 - added input type file pattern
 
