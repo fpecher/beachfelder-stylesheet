@@ -18,7 +18,7 @@
 		@include transition(all, .2s);
 
 		border: $input-field-border-width solid $input-field-border-color;
-		padding: $input-field-vertical-padding $input-field-horizontal-padding;
+		padding: $input-field-vertical-padding $input-field-horizontal-padding-right;
 		max-height: $input-field-max-height;
 		color: $input-field-text-color;
 		font-size: $input-field-label-font-size;
@@ -27,6 +27,14 @@
 		border-radius: $input-field-border-radius;
 		appearance: none;
 		box-sizing: border-box;
+
+		&--icon {
+			padding-left: $input-field-horizontal-padding;
+		}
+
+		&--right {
+			padding-left: $input-field-horizontal-padding-right;
+		}
 	}
 
 	&__icon {
@@ -36,6 +44,21 @@
 		left: $input-icon-position-left;
 		top: $input-icon-position-top;
 		padding: $input-icon-spacing;
+
+		&--right {
+			@include transition(all, .2s);
+
+			cursor: pointer;
+			left: auto;
+			right: $input-icon-position-right;
+			background: $input-icon-right-background-color;
+			border-top-right-radius: $input-icon-right-border-radius;
+			border-bottom-right-radius: $input-icon-right-border-radius;
+
+			&:hover {
+				background: $input-icon-right-background-color-hovered;
+			}
+		}
 	}
 
 	&__label {
@@ -44,19 +67,35 @@
 
 		position: absolute;
 		top: $input-label-position-top;
-		left: $input-label-position-left;
+		left: $input-label-position-right;
 		display: block;
 		color: $input-label-color;
 		font-size: $input-label-font-size;
 		transform: translateY(-50%);
+
+		&--icon {
+			left: $input-label-position-left;
+		}
+
+		&--right {
+			left: $input-label-position-right;
+		}
 	}
 
 	&__field:not(:placeholder-shown) ~ &__label {
 		top: $input-label-position-top-not-focused;
-		left: $input-label-position-left-not-focused;
+		left: $input-label-position-right;
 		font-size: $input-label-font-size-not-focused;
 		color: lighten($input-label-color, 10%);
 		transform: none;
+
+		&--icon {
+			left: $input-label-position-left-not-focused;
+		}
+
+		&--right {
+			left: $input-label-position-right-not-focused;
+		}
 	}
 
 	&__field:focus {
@@ -65,9 +104,17 @@
 
 	&__field:focus:not(:placeholder-shown) ~ &__label {
 		top: $input-label-position-top-focused;
-		left: $input-label-position-left-focused;
+		left: $input-label-position-right;
 		font-size: $input-label-font-size-focused;
 		color: lighten($input-label-color, 10%);
 		transform: none;
+
+		&--icon {
+			left: $input-label-position-left-focused;
+		}
+
+		&--right {
+			left: $input-label-position-right-focused;
+		}
 	}
 }

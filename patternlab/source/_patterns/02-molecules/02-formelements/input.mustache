@@ -1,7 +1,11 @@
 <label class="input {{ styleModifier }}">
-	<input type="{{input_type}}" class="input__field" placeholder=" ">
+	<input type="{{input_type}}" class="input__field
+	{{# input_iconPositionRight }} input__field--right {{/ input_iconPositionRight }}
+	{{# input_icon }} input__field--icon {{/ input_icon }}" placeholder=" ">
 	{{# input_icon }}
-		<span class="input__icon icon icon--{{ input_icon }} "></span>
+		<span class="input__icon icon icon--{{ input_icon }} {{# input_iconPositionRight }} input__icon--right {{/ input_iconPositionRight }}"></span>
 	{{/ input_icon }}
-	<span class="input__label">{{ input_label }}</span>
+	<span class="
+		input__label {{# input_iconPositionRight }} input__label--right {{/ input_iconPositionRight }}
+		{{# input_icon }} input__label--icon {{/ input_icon }}">{{ input_label }}</span>
 </label>
