@@ -1,0 +1,44 @@
+@import "../../base/font/font.mixin";
+@import "../../base/typo/typo.mixin";
+@import "../../mixins/animation";
+
+@import "select.setup";
+
+.select {
+
+	$bem-block: &;
+
+  position: relative;
+  display: block;
+
+  &__field {
+    @include -font-primary();
+    @include -typo-copy();
+
+    width: $select-field-width;
+    height: $select-field-height;
+    display: block;
+    padding: .375rem 1.125rem;
+    border-radius: $select-field-border-radius;
+    outline: none;
+    appearance: none;
+    box-sizing: border-box;
+    border: none;
+    background: $select-field-background-color;
+    cursor: pointer;
+    color: $select-field-text-color;
+
+    &:hover ~ #{$bem-block}__icon {
+			color: $select-icon-text-color-hovered;
+    }
+  }
+
+  &__icon {
+  	@include transition(color, .2s);
+    position: absolute;
+    top: $select-icon-position-top;
+    right: $select-icon-positon-right;
+    color: $select-icon-text-color;
+    transform: translate($select-icon-position-vertical, -$select-icon-position-top);
+  }
+}

@@ -1,0 +1,13 @@
+@import "../../setup/color-palette.setup";
+
+$select-field-width: 100% !default;
+$select-field-height: 3.75rem !default;
+$select-field-border-radius: .1875rem !default;
+$select-field-background-color: $color-palette-gray-2 !default;
+$select-field-text-color: $color-palette-blue-2 !default;
+
+$select-icon-position-top: 50% !default;
+$select-icon-positon-right: 1.1875rem !default;
+$select-icon-position-vertical: 0;
+$select-icon-text-color: $color-palette-blue-2 !default;
+$select-icon-text-color-hovered: $color-palette-green !default;
