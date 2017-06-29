@@ -18,7 +18,7 @@
     width: $select-field-width;
     height: $select-field-height;
     display: block;
-    padding: .375rem 1.125rem;
+    padding: $select-field-inner-spacing-vertical $select-field-inner-spacing-horizontal;
     border-radius: $select-field-border-radius;
     outline: none;
     appearance: none;
