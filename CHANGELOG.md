@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
+
+
+## [0.8.0] - 2017-06-29
 - added radio icon pattern
 - added select pattern
 
