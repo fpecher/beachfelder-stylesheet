@@ -1,0 +1,9 @@
+{
+	"bodyClass": "sg-wrapper-light",
+	"radio-icon_name": "Some name",
+	"radio-icon_value": "Some value",
+	"radio-icon_label": "Some label",
+	"radio-icon_icon": "check",
+	"radio-icon_checked": false,
+	"radio-icon_disabled": false
+}

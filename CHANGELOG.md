@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
+- added radio icon pattern
 
 ## [0.7.1] - 2017-06-23
 - changed profile user image display

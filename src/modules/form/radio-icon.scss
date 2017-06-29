@@ -1,0 +1,89 @@
+@import "../../base/font/font.mixin";
+@import "../../base/typo/typo.mixin";
+@import "../../base/align/align.mixin";
+@import "../../base/spacing/spacing.mixin";
+@import "../../mixins/animation";
+
+@import "radio-icon.setup";
+
+.radio-icon {
+  $bem-block: &;
+
+	@include -align-center();
+
+  display: inline-block;
+  width: auto;
+  cursor: pointer;
+
+  &__field {
+    display: none;
+  }
+
+  &__container {
+  	@include -spacing-inner-b();
+  	@include transition(all, .2s);
+  	background-color: $radio-icon-container-background-color;
+  	border-radius: $radio-icon-border-radius;
+  }
+
+  &__icon {
+  	@include transition(all, .2s);
+		display: block;
+		font-size: $radio-icon-icon-font-size;
+		color: $radio-icon-icon-text-color;
+  }
+
+  &__label {
+  	@include transition(all, .2s);
+  	@include -typo-copy();
+    @include -font-primary();
+    display: block;
+    color: $radio-icon-label-text-color;
+  }
+
+  // radio is hovered, not checked and not disabled
+  &:hover &__field:not(:checked):not(:disabled) {
+    & ~ #{$bem-block}__container {
+			background-color: $radio-icon-container-background-color-hovered;
+    }
+
+    & ~ #{$bem-block}__container #{$bem-block}__icon {
+			color: $radio-icon-icon-text-color-hovered;
+    }
+
+    & ~ #{$bem-block}__container #{$bem-block}__label {
+			color: $radio-icon-label-text-color-hovered;
+    }
+  }
+
+  // radio is checked
+  &__field:checked {
+    & ~ #{$bem-block}__container {
+			background-color: $radio-icon-container-background-color-checked;
+			box-shadow: 0 5px 30px 0 $radio-icon-container-box-shadow-color-focus;
+    }
+
+    & ~ #{$bem-block}__container #{$bem-block}__icon {
+			color: $radio-icon-icon-text-color-checked;
+    }
+
+    & ~ #{$bem-block}__container #{$bem-block}__label {
+			color: $radio-icon-label-text-color-checked;
+    }
+  }
+
+  // radio is hovered, checked and not disabled
+  &:hover &__field:checked:not(:disabled) {
+    & ~ #{$bem-block}__container {
+			background-color: $radio-icon-container-background-color-checked-hovered;
+    }
+
+    & ~ #{$bem-block}__container #{$bem-block}__icon {
+			color: $radio-icon-icon-text-color-checked-hovered;
+    }
+
+    & ~ #{$bem-block}__container #{$bem-block}__label {
+			color: $radio-icon-label-text-color-checked-hovered;
+    }
+  }
+}

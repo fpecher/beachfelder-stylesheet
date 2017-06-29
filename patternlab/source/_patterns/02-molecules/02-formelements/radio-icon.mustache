@@ -1,0 +1,14 @@
+<label class="radio-icon {{ styleModifier }}">
+	<input class="radio-icon__field"
+				 type="radio"
+				 name="{{radio-icon_name}}"
+				 value="{{radio-icon_value}}"
+				 {{# radio-icon_checked }} checked="checked" {{/ radio-icon_checked}}
+				 {{# radio-icon_disabled }} disabled="disabled" {{/ radio-icon_disabled }}>
+	<div class="radio-icon__container">
+		<span class="radio-icon__icon {{# radio-icon_icon }} icon icon--{{ radio-icon_icon }} {{/ radio-icon_icon }}"></span>
+		{{# radio-icon_label }}
+			<span class="radio-icon__label">{{ radio-icon_label }}</span>
+		{{/ radio-icon_label }}
+	</div>
+</label>

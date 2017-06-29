@@ -1,0 +1,19 @@
+@import "../../setup/color-palette.setup";
+
+$radio-icon-border-radius: .1875rem !default;
+$radio-icon-container-box-shadow-color-focus: rgba($color-palette-black, .1) !default;
+$radio-icon-label-text-color: $color-palette-blue-2 !default;
+$radio-icon-label-text-color-hovered: $color-palette-white !default;
+$radio-icon-label-text-color-checked: $color-palette-white !default;
+$radio-icon-label-text-color-checked-hovered: $color-palette-white !default;
+
+$radio-icon-icon-font-size: 1.5rem !default;
+$radio-icon-icon-text-color: $color-palette-blue-2 !default;
+$radio-icon-icon-text-color-hovered: $color-palette-white !default;
+$radio-icon-icon-text-color-checked: $color-palette-white !default;
+$radio-icon-icon-text-color-checked-hovered: $color-palette-white !default;
+
+$radio-icon-container-background-color: $color-palette-gray-2 !default;
+$radio-icon-container-background-color-hovered: $color-palette-green !default;
+$radio-icon-container-background-color-checked: $color-palette-green !default;
+$radio-icon-container-background-color-checked-hovered: lighten($color-palette-green, 5%) !default;

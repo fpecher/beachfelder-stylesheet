@@ -180,4 +180,16 @@
  	&--eye:before {
  		content: '\f06e';
  	}
+
+ 	&--male:before {
+ 		content: '\f222';
+ 	}
+
+ 	&--female:before {
+ 		content: '\f221';
+ 	}
+
+ 	&--transgender:before {
+ 		content: '\f224';
+ 	}
 }
