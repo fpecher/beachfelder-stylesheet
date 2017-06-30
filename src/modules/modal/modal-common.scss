@@ -13,7 +13,8 @@
 		width: $modal-common-dialog-width;
 		height: $modal-common-dialog-height;
 		position: fixed;
-		background: $modal-common-dialog-background-color;
+		background: $modal-common-dialog-gradient-color-2;
+		background-image: linear-gradient(to bottom, $modal-common-dialog-gradient-color-1 0%, $modal-common-dialog-gradient-color-2 100%);
 		top: $modal-common-dialog-position;
 		left: $modal-common-dialog-position;
 		right: $modal-common-dialog-position;
