@@ -1,0 +1,39 @@
+@import "../../base/background/background.mixin";
+@import "../../base/text-color/text-color.mixin";
+@import "../../base/font/font.mixin";
+@import "../../base/align/align.mixin";
+@import "../../base/spacing/spacing.mixin";
+
+@import "../../mixins/breakpoint";
+
+.teaser-link {
+	@include -background-gray-3;
+	@include -spacing-inner-a;
+	@include -align-center;
+
+	&__icon {
+		@include -typo-headline-2;
+		@include -text-color-blue-2;
+		display: block;
+
+		@include breakpoint ('s') {
+			@include -typo-headline-1;
+		}
+	}
+
+	&__title {
+		@include -typo-copy--large;
+		@include -text-color-blue-2;
+		@include -font-primary;
+		@include -spacing-static-b;
+		display: block;
+	}
+
+	&__link {
+		@include -typo-copy--large;
+		@include -text-color-green;
+		@include -font-primary;
+		@include -spacing-static-b;
+		display: block;
+	}
+}

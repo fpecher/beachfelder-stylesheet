@@ -192,4 +192,16 @@
  	&--transgender:before {
  		content: '\f224';
  	}
+
+ 	&--super:before {
+ 		content: '\f118';
+ 	}
+
+ 	&--normal:before {
+ 		content: '\f11a';
+ 	}
+
+ 	&--bad:before {
+ 		content: '\f119';
+ 	}
 }
