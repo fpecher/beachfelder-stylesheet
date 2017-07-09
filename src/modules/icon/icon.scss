@@ -204,4 +204,12 @@
  	&--bad:before {
  		content: '\f119';
  	}
+
+ 	&--star-o:before {
+ 		content: '\f006';
+ 	}
+
+ 	&--star:before {
+ 		content: '\f005';
+ 	}
 }
