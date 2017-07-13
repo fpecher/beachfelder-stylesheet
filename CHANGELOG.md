@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+## [0.10.0] - 2017-07-13
+- added hero image for beachcourt detail page
 
 ## [0.9.0] - 2017-07-09
 - added teaser link pattern

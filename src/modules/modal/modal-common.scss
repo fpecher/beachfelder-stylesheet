@@ -38,6 +38,8 @@
 		margin: auto;
 		width: $modal-common-content-width;
 		height: $modal-common-content-height;
+		box-sizing: border-box;
+		overflow-y: scroll;
 
 		@include breakpoint('m') {
 			width: $modal-common-content-width-m;
@@ -99,6 +101,7 @@
 		bottom: $modal-common-footer-position-bottom;
 		left: $modal-common-footer-position;
 		width: $modal-common-footer-width;
+		box-sizing: border-box;
 
 		@include breakpoint('m') {
 			position: relative;

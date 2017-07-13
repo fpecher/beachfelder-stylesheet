@@ -87,6 +87,7 @@
 	&__inner {
 		@include -spacing-inner-a();
 		width: $modal-image-inner-width;
+		box-sizing: border-box;
 
 		@include breakpoint('m') {
 			width: $modal-image-inner-width-m;
@@ -133,6 +134,7 @@
 		@include -font-primary();
 		@include -typo-copy();
 		@include -spacing-static-b();
+		overflow-y: scroll;
 	}
 
 	&__footer {
@@ -142,6 +144,7 @@
 		bottom: $modal-image-footer-position-bottom;
 		left: $modal-image-footer-position;
 		width: $modal-image-footer-width;
+		box-sizing: border-box;
 
 		@include breakpoint('m') {
 			position: relative;

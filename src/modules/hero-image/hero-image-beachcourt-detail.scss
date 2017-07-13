@@ -1,0 +1,56 @@
+@import "../../base/typo/typo.mixin";
+@import "../../base/font/font.mixin";
+@import "../../base/text-color/text-color.mixin";
+@import "../../base/grid/flex.mixin";
+@import "../../base/background/background.mixin";
+@import "../../base/spacing/spacing.mixin";
+
+@import "../../mixins/breakpoint";
+
+@import "hero-image-beachcourt-detail.setup";
+
+.hero-image-beachcourt-detail {
+	height: $hero-image-beachcourt-detail-height;
+	width: $hero-image-beachcourt-detail-width;
+	overflow: hidden;
+	position: relative;
+	background-repeat: no-repeat;
+  background-size: cover;
+
+  &__overlay {
+  	@include -background-gradient;
+  	@include flex;
+  	@include flex--center-horizontal;
+  	@include flex--center-vertical;
+  	@include flex--direction(column);
+  	@include -spacing-inner-a;
+
+  	position: absolute;
+  	width: $hero-image-beachcourt-detail-overlay-width;
+  	height: $hero-image-beachcourt-detail-overlay-height;
+  }
+
+  &__title {
+  	@include -typo-headline-3;
+  	@include -font-secondary;
+  	@include -text-color-white;
+  	@include -overflow-ellipsis;
+
+  	display: block;
+  	max-width: $hero-image-beachcourt-detail-title-max-width;
+
+  	@include breakpoint('s') {
+  		@include -typo-headline-1;
+  	}
+  }
+
+  &__subtitle {
+  	@include -typo-headline-5;
+  	@include -font-secondary;
+  	@include -text-color-white;
+  	@include -overflow-ellipsis;
+
+  	display: block;
+  	max-width: $hero-image-beachcourt-detail-subtitle-max-width;
+  }
+}
