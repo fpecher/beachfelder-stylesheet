@@ -28,6 +28,7 @@
   	position: absolute;
   	width: $hero-image-beachcourt-detail-overlay-width;
   	height: $hero-image-beachcourt-detail-overlay-height;
+  	box-sizing: border-box;
   }
 
   &__title {
