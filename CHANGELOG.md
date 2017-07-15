@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+## [0.11.1] - 2017-07-15
+- fixed modal problems on mobile devices
+
 ## [0.11.0] - 2017-07-15
 - added text-shadow to headlines in hero image beachcourt detail page
 - added overlay pattern
