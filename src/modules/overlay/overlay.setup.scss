@@ -1,3 +1,7 @@
 @import "../../setup/color-palette.setup.scss";
 
-$overlay-background-color: rgba($color-palette-black, 0.7) !default;
+$overlay-background-gradient-color-1: rgba($color-palette-gradient-color-1,0.45) !default;
+$overlay-background-gradient-color-2: rgba($color-palette-gradient-color-2,0.45) !default;
+$overlay-z-index: 300 !default;
+$overlay-position: 0 !default;
+$overlay-dimensions: 100% !default;

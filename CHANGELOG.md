@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+## [0.11.0] - 2017-07-15
+- added text-shadow to headlines in hero image beachcourt detail page
+- added overlay pattern
+
 ## [0.10.0] - 2017-07-13
 - added hero image for beachcourt detail page
 

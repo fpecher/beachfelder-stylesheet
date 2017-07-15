@@ -3,8 +3,7 @@
 
 .hero-image {
 	width: $hero-image-width;
-	min-height: $hero-image-min-height;
-	max-height: $hero-image-max-height;
+	height: $hero-image-height;
 	overflow: hidden;
 	position: relative;
 	background-repeat: no-repeat;

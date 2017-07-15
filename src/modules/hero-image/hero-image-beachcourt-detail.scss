@@ -2,7 +2,6 @@
 @import "../../base/font/font.mixin";
 @import "../../base/text-color/text-color.mixin";
 @import "../../base/grid/flex.mixin";
-@import "../../base/background/background.mixin";
 @import "../../base/spacing/spacing.mixin";
 
 @import "../../mixins/breakpoint";
@@ -18,7 +17,6 @@
   background-size: cover;
 
   &__overlay {
-  	@include -background-gradient;
   	@include flex;
   	@include flex--center-horizontal;
   	@include flex--center-vertical;
@@ -28,6 +26,8 @@
   	position: absolute;
   	width: $hero-image-beachcourt-detail-overlay-width;
   	height: $hero-image-beachcourt-detail-overlay-height;
+  	background: $hero-image-beachcourt-detail-overlay-gradient-color-1;
+		background-image: linear-gradient(to bottom, $hero-image-beachcourt-detail-overlay-gradient-color-1 0%, $hero-image-beachcourt-detail-overlay-gradient-color-2 100%);
   	box-sizing: border-box;
   }
 
@@ -36,6 +36,7 @@
   	@include -font-secondary;
   	@include -text-color-white;
   	@include -overflow-ellipsis;
+  	text-shadow: $hero-image-beachcourt-detail-title-text-shadow-position $hero-image-beachcourt-detail-title-text-shadow-position $hero-image-beachcourt-detail-title-text-shadow-blur $hero-image-beachcourt-detail-title-text-shadow-color;
 
   	display: block;
   	max-width: $hero-image-beachcourt-detail-title-max-width;
@@ -50,6 +51,7 @@
   	@include -font-secondary;
   	@include -text-color-white;
   	@include -overflow-ellipsis;
+  	text-shadow: $hero-image-beachcourt-detail-title-text-shadow-position $hero-image-beachcourt-detail-title-text-shadow-position $hero-image-beachcourt-detail-title-text-shadow-blur $hero-image-beachcourt-detail-title-text-shadow-color;
 
   	display: block;
   	max-width: $hero-image-beachcourt-detail-subtitle-max-width;

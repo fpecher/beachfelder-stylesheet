@@ -1,37 +1,19 @@
 // setup
-@import "overlay.setup.scss";
+@import "overlay.setup";
 
-// mixin
-@import "../../base/font/font.mixin.scss";
-@import "../../base/typo/typo.mixin.scss";
-@import "../../base/text-color/text-color.mixin.scss";
-@import "../../base/align/align.mixin.scss";
-
-// extend
-@import "../../base/grid/flex.mixin.scss";
+@import "../../base/grid/flex.mixin";
 
 .overlay {
-  position: relative;
+	@include flex;
+	@include flex--center-vertical;
+	@include flex--center-horizontal;
 
-  &__item {
-    @include flex;
-    @include flex--center-vertical;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: $overlay-background-color;
-  }
-
-  &__message {
-    @include -font-secondary();
-    @include -typo-headline-4();
-    @include -text-color-white();
-    @include -align-center();
-    max-width: 17.5rem;
-    padding: 1.125rem;
-    margin: 0 auto;
-    box-sizing: content-box;
-  }
+  position: fixed;
+  left: $overlay-position;
+  top: $overlay-position;
+  height: $overlay-dimensions;
+  width: $overlay-dimensions;
+  background: $modal-image-dialog-gradient-color-2;
+  background-image: linear-gradient(to bottom, $modal-image-dialog-gradient-color-1 0%, $modal-image-dialog-gradient-color-2 100%);
+  z-index: $overlay-z-index;
 }
