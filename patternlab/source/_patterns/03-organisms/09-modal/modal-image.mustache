@@ -5,7 +5,7 @@
 			<div class="modal-image__image">
 				<img src="{{ modal-image_image }}" class="image" />
 				<div class="modal-image__overlay">
-					{{> organisms-header-page(header-page_title: "Deine Vorteile",header-page_titleColor: "white") }}
+					{{> organisms-header-page:modal-image__headline(header-page_title: "Deine Vorteile",header-page_titleColor: "white") }}
 					{{> molecules-list-common:modal-image__list|-spacing-static-b }}
 				</div>
 			</div>

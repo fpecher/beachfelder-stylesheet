@@ -15,8 +15,6 @@
 		width: $modal-image-dialog-width;
 		height: $modal-image-dialog-height;
 		position: fixed;
-		background: $modal-image-dialog-gradient-color-2;
-		background-image: linear-gradient(to bottom, $modal-image-dialog-gradient-color-1 0%, $modal-image-dialog-gradient-color-2 100%);
 
 		top: $modal-image-dialog-position;
 		left: $modal-image-dialog-position;
@@ -38,6 +36,7 @@
 		margin: auto;
 		width: $modal-image-content-width;
 		height: $modal-image-content-height;
+		overflow-y: scroll;
 
 		@include breakpoint('m') {
 			@include flex--direction(row);
@@ -69,7 +68,7 @@
 	&__overlay {
 		@include -spacing-inner-a();
 		@include -background-gradient();
-		display: none;
+		// display: none;
 		position: absolute;
 		top: $modal-image-image-overlay-position;
 		left: $modal-image-image-overlay-position;
@@ -140,9 +139,6 @@
 	&__footer {
 		@include -spacing-static-f();
 		@include -spacing-inner-a();
-		position: fixed;
-		bottom: $modal-image-footer-position-bottom;
-		left: $modal-image-footer-position;
 		width: $modal-image-footer-width;
 		box-sizing: border-box;
 
@@ -153,11 +149,25 @@
 		}
 	}
 
+	&__headline {
+		display: none;
+
+		@include breakpoint('s') {
+			display: block;
+		}
+	}
+
 	&__list {
+		display: none;
 
 		li {
 			@include -typo-copy--large();
 			color: $modal-image-list-text-color;
 		}
+
+		@include breakpoint('s') {
+			display: block;
+		}
+
 	}
 }

@@ -3,8 +3,6 @@
 $modal-common-dialog-width: 100% !default;
 $modal-common-dialog-height: 100% !default;
 $modal-common-dialog-position: 0 !default;
-$modal-common-dialog-gradient-color-1: rgba($color-palette-gradient-color-1, .4) !default;
-$modal-common-dialog-gradient-color-2: rgba($color-palette-gradient-color-2, .4) !default;
 
 $modal-common-content-background-color: $color-palette-white !default;
 $modal-common-content-width: 100% !default;
@@ -19,7 +17,7 @@ $modal-common-header-text-color: $color-palette-blue-2 !default;
 $modal-common-header-text-max-width: 90%;
 
 $modal-common-footer-position: 0 !default;
-$modal-common-footer-position-bottom: 1rem !default;
+$modal-common-footer-position-bottom: 0 !default;
 $modal-common-footer-width: 100% !default;
 $modal-common-footer-inner-spacing-reset: 0 !default;
 

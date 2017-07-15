@@ -13,7 +13,7 @@
   top: $overlay-position;
   height: $overlay-dimensions;
   width: $overlay-dimensions;
-  background: $modal-image-dialog-gradient-color-2;
-  background-image: linear-gradient(to bottom, $modal-image-dialog-gradient-color-1 0%, $modal-image-dialog-gradient-color-2 100%);
+  background: $overlay-background-gradient-color-2;
+  background-image: linear-gradient(to bottom, $overlay-background-gradient-color-1 0%, $overlay-background-gradient-color-2 100%);
   z-index: $overlay-z-index;
 }

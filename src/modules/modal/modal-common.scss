@@ -2,6 +2,7 @@
 @import "../../base/spacing/spacing.mixin";
 @import "../../base/font/font.mixin";
 @import "../../base/typo/typo.mixin";
+@import "../../base/background/background.mixin";
 @import "../../base/grid/flex.mixin";
 @import "../../mixins/breakpoint";
 
@@ -13,8 +14,6 @@
 		width: $modal-common-dialog-width;
 		height: $modal-common-dialog-height;
 		position: fixed;
-		background: $modal-common-dialog-gradient-color-2;
-		background-image: linear-gradient(to bottom, $modal-common-dialog-gradient-color-1 0%, $modal-common-dialog-gradient-color-2 100%);
 		top: $modal-common-dialog-position;
 		left: $modal-common-dialog-position;
 		right: $modal-common-dialog-position;
@@ -44,6 +43,7 @@
 		@include breakpoint('m') {
 			width: $modal-common-content-width-m;
 			height: auto;
+			overflow-y: visible;
 			box-shadow: 0 0 $modal-common-content-box-shadow-blur $modal-common-content-box-shadow-spread $modal-common-content-box-shadow-color;
 		}
 
@@ -97,6 +97,7 @@
 	&__footer {
 		@include -spacing-static-f();
 		@include -spacing-inner-a();
+		@include -background-page();
 		position: fixed;
 		bottom: $modal-common-footer-position-bottom;
 		left: $modal-common-footer-position;
