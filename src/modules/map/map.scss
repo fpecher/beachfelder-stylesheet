@@ -1,0 +1,37 @@
+@import "../../base/grid/flex.mixin";
+@import "../../base/typo/typo.mixin";
+@import "../../base/font/font.mixin";
+@import "../../base/text-color/text-color.mixin";
+
+@import "map.setup";
+
+.map {
+	width: $map-width;
+	height: $map-height;
+	position: relative;
+
+	&__canvas {
+
+	}
+
+	&__overlay {
+		@include flex;
+		@include flex--center-vertical;
+		@include flex--center-horizontal;
+		@include -typo-headline-3;
+		@include -font-secondary;
+		@include -text-color-white;
+
+		position: absolute;
+		top: $map-overlay-position;
+		left: $map-overlay-position;
+		width: $map-overlay-dimension;
+		height: $map-overlay-dimension;
+		background: $map-overlay-background-color;
+
+		&:active,
+		.map__canvas:hover + & {
+			visibility: hidden;
+		}
+	}
+}
