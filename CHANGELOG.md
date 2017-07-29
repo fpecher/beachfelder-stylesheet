@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+## [0.12.1] - 2017-07-29
+- changed font size of headlines
+
 ## [0.12.0] - 2017-07-29
 - added map
 

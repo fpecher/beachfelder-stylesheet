@@ -2,12 +2,12 @@
 
 @mixin -typo-headline-1() {
   font-weight: normal;
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1.18181818;
   text-transform: uppercase;
 
   @include breakpoint('s') {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     line-height: 1.14285714;
   }
 
@@ -19,12 +19,12 @@
 
 @mixin -typo-headline-2() {
   font-weight: normal;
-  font-size: 2.188rem;
+  font-size: 1.9375rem;
   line-height: 1.22222222;
   text-transform: uppercase;
 
   @include breakpoint('s') {
-    font-size: 2.188rem;
+    font-size: 2rem;
     line-height: 1.16666667;
   }
 
