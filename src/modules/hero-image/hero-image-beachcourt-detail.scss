@@ -2,6 +2,7 @@
 @import "../../base/font/font.mixin";
 @import "../../base/text-color/text-color.mixin";
 @import "../../base/grid/flex.mixin";
+@import "../../base/align/align.mixin";
 @import "../../base/spacing/spacing.mixin";
 
 @import "../../mixins/breakpoint";
@@ -36,6 +37,7 @@
   	@include -font-secondary;
   	@include -text-color-white;
   	@include -overflow-ellipsis;
+  	@include -align-center;
   	text-shadow: $hero-image-beachcourt-detail-title-text-shadow-position $hero-image-beachcourt-detail-title-text-shadow-position $hero-image-beachcourt-detail-title-text-shadow-blur $hero-image-beachcourt-detail-title-text-shadow-color;
 
   	display: block;

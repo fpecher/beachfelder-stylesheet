@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
+- added align-center to hero-image-beachcourt
 
 ## [0.12.1] - 2017-07-29
 - changed font size of headlines
