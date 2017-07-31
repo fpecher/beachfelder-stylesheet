@@ -1,4 +1,5 @@
 @import '../../base/font/font.mixin';
+@import '../../base/typo/typo.mixin';
 @import '../../base/align/align.mixin';
 @import '../../base/spacing/spacing.mixin';
 
@@ -26,6 +27,14 @@
 			background: $input-range-slider-thumb-background-color;
 			border-radius: $input-range-slider-thumb-border-radius;
 		}
+	}
+
+	&__label {
+		@include -font-primary;
+		display: block;
+		font-size: $input-range-label-font-size;
+		color: $input-range-label-text-color;
+		margin-bottom: $input-range-label-spacing-bottom;
 	}
 
 	&__output {
