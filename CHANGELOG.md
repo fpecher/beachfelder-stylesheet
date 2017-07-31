@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+## [0.14.0] - 2017-07-31
+- added input range pattern
+
 ## [0.13.0] - 2017-07-31
 - added align-center to hero-image-beachcourt
 - added validation style at input fields

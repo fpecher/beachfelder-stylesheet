@@ -1,0 +1,17 @@
+@import '../../setup/color-palette.setup';
+
+
+$input-range-width: 100% !default;
+
+$input-range-field-width: 100% !default;
+$input-range-field-height: .9375rem !default;
+$input-range-field-background-color: $color-palette-green !default;
+$input-range-field-border-radius: .25rem !default;
+
+$input-range-slider-thumb-dimension: 1.75rem !default;
+$input-range-slider-thumb-background-color: $color-palette-blue-1 !default;
+$input-range-slider-thumb-border-radius: 100% !default;
+
+$input-range-output-width: 100% !default;
+$input-range-output-color: $color-palette-blue-2 !default;
+$input-range-output-font-size: 1.25rem !default;

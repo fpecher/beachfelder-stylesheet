@@ -1,0 +1,9 @@
+<label class="input-range {{ styleModifier }}">
+	<input type="range" class="input-range__field"
+					min="{{ input-range_minValue }}"
+					max="{{ input-range_maxValue }}"
+					onchange="input-range__output.value=value"
+					value="{{ input-range_minValue }}"
+	>
+	<output class="input-range__output">{{ input-range_minValue }}</output>
+</label>

@@ -1,0 +1,41 @@
+@import '../../base/font/font.mixin';
+@import '../../base/align/align.mixin';
+@import '../../base/spacing/spacing.mixin';
+
+@import 'input-range.setup';
+
+.input-range {
+	display: inline-block;
+	border: none;
+	position: relative;
+	width: $input-range-width;
+
+	&__field {
+		appearance: none !important;
+		width: $input-range-field-width;
+		height: $input-range-field-height;
+		background: $input-range-field-background-color;
+		border-radius: $input-range-field-border-radius;
+		outline: none;
+		margin: auto;
+
+		&::-webkit-slider-thumb {
+			appearance: none !important;
+			width: $input-range-slider-thumb-dimension;
+			height: $input-range-slider-thumb-dimension;
+			background: $input-range-slider-thumb-background-color;
+			border-radius: $input-range-slider-thumb-border-radius;
+		}
+	}
+
+	&__output {
+		@include -align-center;
+		@include -font-primary;
+		@include -spacing-static-c;
+
+		display: block;
+		font-size: $input-range-output-font-size;
+		width: $input-range-output-width;
+		color: $input-range-output-color;
+	}
+}
