@@ -5,7 +5,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
+
+## [0.13.0] - 2017-07-31
 - added align-center to hero-image-beachcourt
+- added validation style at input fields
 
 ## [0.12.1] - 2017-07-29
 - changed font size of headlines

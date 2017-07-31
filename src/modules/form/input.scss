@@ -82,6 +82,18 @@
 		}
 	}
 
+	&__error {
+		@include -font-primary;
+
+		position: absolute;
+    right: $input-error-position;
+    top: $input-error-position;
+    padding: $input-error-inner-spacing;
+    font-size: $input-error-font-size;
+    color: $input-error-font-color;
+    background: $input-error-background-color;
+	}
+
 	&__field:not(:placeholder-shown) ~ &__label {
 		top: $input-label-position-top-not-focused;
 		left: $input-label-position-right;

@@ -20,6 +20,12 @@ $input-label-position-left: 3rem !default;
 $input-label-position-right: 1rem !default;
 $input-label-position-top: 50% !default;
 
+$input-error-position: 0 !default;
+$input-error-inner-spacing: .75rem !default;
+$input-error-font-size: .825rem !default;
+$input-error-font-color: $color-palette-white !default;
+$input-error-background-color: $color-palette-red !default;
+
 $input-icon-position-left: 0 !default;
 $input-icon-position-right: 0 !default;
 $input-icon-position-top: 0 !default;
