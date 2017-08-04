@@ -87,6 +87,7 @@
 
 	&__button {
 		max-width: $notification-sticky-button-max-width;
+		@include -spacing-static-b;
 
 		@include breakpoint('s') {
 			@include -spacing-zero();

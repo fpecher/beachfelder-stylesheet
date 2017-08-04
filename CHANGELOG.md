@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
+- changed width of information in notification-box-rating pattern
+- added some spacing to button on mobile at notification-sticky
 
 ## [0.14.1] - 2017-07-31
 - changed style of input range pattern

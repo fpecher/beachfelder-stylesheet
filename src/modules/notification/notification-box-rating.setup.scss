@@ -4,8 +4,13 @@ $notification-box-rating-background-color: $color-palette-green !default;
 $notification-box-rating-height: 100%;
 $notification-box-rating-image-width: 4.875rem !default;
 
+$notification-box-rating-summary-width: 100% !default;
+$notification-box-rating-summary-width-s: 20% !default;
+
+$notification-box-rating-details-width: 80% !default;
+
 $notification-box-rating-label-color: $color-palette-white !default;
-$notification-box-rating-label-width: 45% !default;
+$notification-box-rating-label-width: 30% !default;
 $notification-box-rating-label-inner-spacing-horizontal: .4375rem !default;
 $notification-box-rating-label-inner-spacing-vertical: 1.875rem !default;
 $notification-box-rating-label-margin-right: .625rem;
