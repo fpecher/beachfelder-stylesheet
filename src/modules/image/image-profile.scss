@@ -1,0 +1,60 @@
+@import '../../base/grid/flex.mixin';
+@import "../../base/typo/typo.mixin";
+@import "../../base/text-color/text-color.mixin";
+
+@import 'image-profile.setup';
+
+.image-profile {
+
+	$bem-block: &;
+
+	height: $image-profile-dimension;
+	width: $image-profile-dimension;
+	position: absolute;
+	top: $image-profile-position-top;
+	left: $image-profile-position-left;
+	transform: translateX(-$image-profile-position-left);
+	overflow: hidden;
+	border-radius: $image-profile-border-radius;
+	border: $image-profile-border-width solid $image-profile-border-color;
+
+	&:hover #{$bem-block}__overlay {
+		@include flex;
+	}
+
+	&__image {
+		width: auto;
+		height: $image-profile-image-height;
+		position: absolute;
+		left: $image-profile-image-position;
+		top: $image-profile-image-position;
+		transform: translate(-$image-profile-image-position, -$image-profile-image-position);
+	}
+
+	&__overlay {
+		@include flex;
+		@include flex--center-vertical;
+		@include flex--center-horizontal;
+		display: none;
+		position: absolute;
+		top: $image-profile-overlay-position;
+		left: $image-profile-overlay-position;
+		width: $image-profile-overlay-dimension;
+		height: $image-profile-overlay-dimension;
+		background: $image-profile-overlay-background-color;
+		cursor: pointer;
+	}
+
+	&__field {
+		opacity: $image-profile-field-opacity;
+		overflow: hidden;
+		position: absolute;
+		z-index: -$image-profile-field-z-index;
+	}
+
+	&__icon {
+		@include -text-color-white;
+		@include -typo-headline-3;
+	}
+
+}

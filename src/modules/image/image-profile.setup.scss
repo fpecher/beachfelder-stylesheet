@@ -1,0 +1,21 @@
+@import '../../setup/color-palette.setup';
+
+
+$image-profile-reset: 0 !default;
+
+$image-profile-dimension: 9.375rem !default;
+$image-profile-position-top: $image-profile-reset !default;
+$image-profile-position-left: $image-profile-reset !default;
+$image-profile-border-radius: 50% !default;
+$image-profile-border-width: 4px !default;
+$image-profile-border-color: $color-palette-white !default;
+
+$image-profile-image-height: 100% !default;
+$image-profile-image-position: 50% !default;
+
+$image-profile-overlay-dimension: 100% !default;
+$image-profile-overlay-position: $image-profile-reset !default;
+$image-profile-overlay-background-color: rgba($color-palette-green, .7);
+
+$image-profile-field-opacity: $image-profile-reset !default;
+$image-profile-field-z-index: 999 !default;

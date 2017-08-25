@@ -1,0 +1,86 @@
+@import 'hero-image-profile.setup';
+
+
+@import "../../base/typo/typo.mixin";
+@import "../../base/font/font.mixin";
+@import "../../base/text-color/text-color.mixin";
+@import "../../base/grid/flex.mixin";
+@import "../../base/align/align.mixin";
+@import "../../base/spacing/spacing.mixin";
+
+@import "../../mixins/breakpoint";
+
+.hero-image-profile {
+
+	$bem-block: &;
+
+	height: $hero-image-profile-height;
+	width: $hero-image-profile-width;
+	overflow: hidden;
+	position: relative;
+	background-repeat: no-repeat;
+  background-size: cover;
+
+  &__overlay {
+  	@include flex;
+  	@include flex--center-horizontal;
+  	@include flex--center-vertical;
+  	@include flex--direction(column);
+  	@include -spacing-inner-a;
+
+  	position: absolute;
+  	width: $hero-image-profile-overlay-width;
+  	height: $hero-image-profile-overlay-height;
+  	background: $hero-image-profile-overlay-gradient-color-1;
+		background-image: linear-gradient(to bottom, $hero-image-profile-overlay-gradient-color-1 0%, $hero-image-profile-overlay-gradient-color-2 100%);
+  	box-sizing: border-box;
+
+  	&:hover #{$bem-block}__image {
+			top: $hero-image-profile-image-position-top-s;
+  	}
+  }
+
+  &__image {
+		top: $hero-image-profile-image-position-top;
+		left: $hero-image-profile-image-position-left;
+		transform: translateX(-$hero-image-profile-image-position-left);
+		transition: all .2s ease-in;
+
+		@include breakpoint('s') {
+			left: $hero-image-profile-image-position-left-s;
+			top: $hero-image-profile-image-position-top-s;
+		}
+
+		&:hover #{$bem-block}__image-overlay {
+			@include flex;
+		}
+
+  }
+
+  &__title {
+  	@include -typo-headline-3;
+  	@include -font-secondary;
+  	@include -text-color-white;
+  	@include -overflow-ellipsis;
+  	@include -align-center;
+  	text-shadow: $hero-image-profile-title-text-shadow-position $hero-image-profile-title-text-shadow-position $hero-image-profile-title-text-shadow-blur $hero-image-profile-title-text-shadow-color;
+
+  	display: block;
+  	max-width: $hero-image-profile-title-max-width;
+
+  	@include breakpoint('s') {
+  		@include -typo-headline-1;
+  	}
+  }
+
+  &__subtitle {
+  	@include -typo-headline-5;
+  	@include -font-secondary;
+  	@include -text-color-white;
+  	@include -overflow-ellipsis;
+  	text-shadow: $hero-image-profile-title-text-shadow-position $hero-image-profile-title-text-shadow-position $hero-image-profile-title-text-shadow-blur $hero-image-profile-title-text-shadow-color;
+
+  	display: block;
+  	max-width: $hero-image-profile-subtitle-max-width;
+  }
+}

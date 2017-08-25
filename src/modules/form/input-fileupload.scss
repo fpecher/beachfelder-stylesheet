@@ -31,7 +31,7 @@
 	}
 
 	&__label {
-		@include -font-primary();
+		@include -font-primary;
 		font-size: $input-fileupload-label-font-size;
 		color: $input-fileupload-label-text-color;
 	}

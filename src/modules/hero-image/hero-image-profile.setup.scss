@@ -1,0 +1,24 @@
+@import "../../setup/color-palette.setup";
+
+$hero-image-profile-height: 35vh !default;
+$hero-image-profile-width: 100% !default;
+$hero-image-profile-overlay-width: 100% !default;
+$hero-image-profile-overlay-height: 100% !default;
+$hero-image-profile-overlay-position-vertical: 0 !default;
+$hero-image-profile-overlay-position-horizontal: 0 !default;
+$hero-image-profile-overlay-gradient-color-1: rgba($color-palette-gradient-color-1,0.45) !default;
+$hero-image-profile-overlay-gradient-color-2: rgba($color-palette-gradient-color-2,0.45) !default;
+
+$hero-image-profile-image-position-top: 70% !default;
+$hero-image-profile-image-position-top-s: 15% !default;
+$hero-image-profile-image-position-left: 50% !default;
+$hero-image-profile-image-position-left-s: 30% !default;
+
+$hero-image-profile-image-height: 100% !default;
+$hero-image-profile-image-positon: 50% !default;
+
+$hero-image-profile-title-max-width: 100% !default;
+$hero-image-profile-subtitle-max-width: 100% !default;
+$hero-image-profile-title-text-shadow-position: 1px !default;
+$hero-image-profile-title-text-shadow-blur: .625rem !default
+$hero-image-profile-title-text-shadow-color: rgba($color-palette-gray-1, .5);
