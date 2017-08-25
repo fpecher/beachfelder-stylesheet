@@ -1,6 +1,7 @@
 @import '../../base/grid/flex.mixin';
 @import "../../base/typo/typo.mixin";
 @import "../../base/text-color/text-color.mixin";
+@import "../../base/spacing/spacing.mixin";
 
 @import 'image-profile.setup';
 
@@ -35,6 +36,7 @@
 		@include flex;
 		@include flex--center-vertical;
 		@include flex--center-horizontal;
+		@include -spacing-inner-b;
 		display: none;
 		position: absolute;
 		top: $image-profile-overlay-position;
@@ -43,6 +45,8 @@
 		height: $image-profile-overlay-dimension;
 		background: $image-profile-overlay-background-color;
 		cursor: pointer;
+		box-sizing: border-box;
+
 	}
 
 	&__field {
@@ -52,9 +56,20 @@
 		z-index: -$image-profile-field-z-index;
 	}
 
+	&__label {
+		@include -typo-copy;
+		@include -text-color-white;
+	}
+
 	&__icon {
 		@include -text-color-white;
 		@include -typo-headline-3;
+	}
+
+	&__button {
+		position: absolute;
+		bottom: -.5rem;
+		width: 100%;
 	}
 
 }
