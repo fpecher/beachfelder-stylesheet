@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
+## [0.16.0] - 2017-08-25
+- added profile image pattern
+
 ## [0.15.0] - 2017-08-25
 - changed width of information in notification-box-rating pattern
 - added some spacing to button on mobile at notification-sticky
