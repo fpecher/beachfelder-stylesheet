@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
+
+## [0.15.0] - 2017-08-25
 - changed width of information in notification-box-rating pattern
 - added some spacing to button on mobile at notification-sticky
 - added hero image profile pattern
