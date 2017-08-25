@@ -3,6 +3,7 @@
 @import "../../base/text-color/text-color.mixin";
 @import "../../base/background/background.mixin";
 @import "../../base/align/align.mixin";
+@import "../../base/font/font.mixin";
 @import "../../base/spacing/spacing.mixin";
 @import "../../mixins/animation";
 
@@ -71,6 +72,7 @@
 	&__label {
 		@include -typo-copy;
 		@include -text-color-white;
+		@include -font-primary;
 	}
 
 	&__icon {
