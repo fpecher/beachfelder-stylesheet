@@ -19,3 +19,12 @@ $image-profile-overlay-background-color: rgba($color-palette-green, .7);
 
 $image-profile-field-opacity: $image-profile-reset !default;
 $image-profile-field-z-index: 999 !default;
+
+$image-profile-upload-dimension: 100% !default;
+
+$image-profile-button-inner-spacing: .5rem !default;
+$image-profile-button-width: 100% !default;
+$image-profile-button-position-bottom: 0 !default;
+$image-profile-button-position-left: 50% !default;
+$image-profile-button-z-index: 100;
+$image-profile-button-background-color-hovered: darken($color-palette-red, 5%) !default;

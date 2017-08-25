@@ -1,7 +1,10 @@
 @import '../../base/grid/flex.mixin';
 @import "../../base/typo/typo.mixin";
 @import "../../base/text-color/text-color.mixin";
+@import "../../base/background/background.mixin";
+@import "../../base/align/align.mixin";
 @import "../../base/spacing/spacing.mixin";
+@import "../../mixins/animation";
 
 @import 'image-profile.setup';
 
@@ -36,7 +39,6 @@
 		@include flex;
 		@include flex--center-vertical;
 		@include flex--center-horizontal;
-		@include -spacing-inner-b;
 		display: none;
 		position: absolute;
 		top: $image-profile-overlay-position;
@@ -44,9 +46,19 @@
 		width: $image-profile-overlay-dimension;
 		height: $image-profile-overlay-dimension;
 		background: $image-profile-overlay-background-color;
-		cursor: pointer;
 		box-sizing: border-box;
 
+	}
+
+	&__upload {
+		@include -spacing-inner-b;
+		@include flex;
+		@include flex--center-vertical;
+		@include flex--center-horizontal;
+
+		width: $image-profile-upload-dimension;
+		height: $image-profile-upload-dimension;
+		cursor: pointer;
 	}
 
 	&__field {
@@ -67,9 +79,23 @@
 	}
 
 	&__button {
+		@include -align-center;
+		@include -background-red;
+		@include -text-color-white;
+		@include transition(all, .2s);
+
+		padding: $image-profile-button-inner-spacing;
 		position: absolute;
-		bottom: -.5rem;
-		width: 100%;
+		bottom: $image-profile-button-position-bottom;
+		left: $image-profile-button-position-left;
+		transform: translate(-$image-profile-button-position-left);
+		width: $image-profile-button-width;
+		z-index: $image-profile-button-z-index;
+		cursor: pointer;
+
+		&:hover {
+			background: $image-profile-button-background-color-hovered;
+		}
 	}
 
 }
